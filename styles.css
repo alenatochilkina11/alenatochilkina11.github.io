@@ -5,7 +5,9 @@
   
   body {
     margin: 0;
-    background-color: #6B9080
+    background-color: #6B9080;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: #ffffff;
   }
 
   main {
@@ -18,7 +20,7 @@
     justify-content: center;
   }
 
-  img { 
+  .avatar-image { 
     height: 15rem;
     border-radius: 50%;
   }
@@ -34,9 +36,41 @@
   }
 
   .intro-text {
-    font-family: "Lucida Console", "Courier New", monospace;
     font-size: 1rem;
-    color: #ffffff;
     line-height: 1.2rem
   }
 
+  /* a {
+    color: #224335;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  a:active,
+  a:hover {
+    text-decoration: underline;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 30vh;
+    left: 5%;
+    width: 90%;
+    z-index: 100;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    animation: float-in 0.3s ease-out forwards;
+    flex-direction: column;
+  }
+
+  .modal p {
+    margin: 0;
+    padding: 0 1rem;
+  }
+
+  .modal button {
+    align-self: flex-end;
+    margin: 0.5rem;
+  } */
