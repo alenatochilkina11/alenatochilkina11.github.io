@@ -42,13 +42,12 @@
 
   a {
     color: #224335;
-    font-weight: bold;
     text-decoration: none;
   }
 
   a:active,
   a:hover {
-    text-decoration: underline;
+    font-weight: bold;
 }
 
 .modal-container {
