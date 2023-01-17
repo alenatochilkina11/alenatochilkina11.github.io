@@ -1,3 +1,42 @@
 /* Your Styles Here */
-body{
-}
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    background-color: #6B9080
+  }
+
+  main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 100rem;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img { 
+    height: 20rem;
+    border-radius: 50%;
+  }
+
+  .introduction-card {
+    display: flex;
+    max-width: 40rem;
+    margin: 1rem 0rem 1rem 0rem;
+    padding: 2rem;
+    box-shadow: 0.2rem 0.1rem rgba(255, 255, 103, 0.796), 2px 2px 8px rgba(0, 0, 0, 0.2);
+    background: #A4C3B2;
+    border-radius: 10px;
+  }
+
+  .intro-text {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 1.5rem
+  }
+
