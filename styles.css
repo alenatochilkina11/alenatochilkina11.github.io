@@ -40,7 +40,7 @@
     line-height: 1.2rem
   }
 
-  /* a {
+  a {
     color: #224335;
     font-weight: bold;
     text-decoration: none;
@@ -51,26 +51,65 @@
     text-decoration: underline;
 }
 
-.modal {
-    display: none;
-    position: fixed;
-    top: 30vh;
-    left: 5%;
-    width: 90%;
-    z-index: 100;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    animation: float-in 0.3s ease-out forwards;
-    flex-direction: column;
-  }
+.modal-container {
+  background-color: #A4C3B2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
 
-  .modal p {
-    margin: 0;
-    padding: 0 1rem;
-  }
+.modal-container.show {
+  pointer-events: auto;
+  opacity: 1;
+}
 
-  .modal button {
-    align-self: flex-end;
-    margin: 0.5rem;
-  } */
+.modal-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 50rem;
+  border-radius: 8px;
+  background-color: #EAF4F4;
+  text-align: center;
+}
+
+.modal-content img {
+  border-radius: 0px;
+  margin: 1rem 4rem;
+}
+
+.modal-content p{
+  color: #224335;
+}
+
+.close-button {
+  padding: 0.5rem 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-radius: 8px;
+  background-color: #6B9080;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.close-button:active,
+.close-button:hover {
+  background-color: #EAF4F4;
+  border-color: #224335;
+  border: 8px;
+  color: #224335
+}

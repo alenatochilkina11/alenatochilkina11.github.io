@@ -1,17 +1,11 @@
-var modal = document.getElementsByClassName("modal");
-var link = document.getElementById("modal-link");
-var close = document.getElementsByClassName("close-button");
+const modalContainer = document.getElementsById("modal-container");
+const openLink = document.getElementById("modal-link");
+const closeBtn = document.getElementsById("close-button");
 
-link.onclick = function() {
-  modal.style.display = "flex";
-}
+openLink.addEventListener('click', () => {
+  modalContainer.classList.add('show');
+});
 
-close.onclick = function() {
-  modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+closeBtn.addEventListener('click', () => {
+  modalContainer.classList.remove('show');
+});
